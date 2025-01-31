@@ -13,7 +13,20 @@
 
 n = int (input("Inserisci un numero: "))
 i = 0
+somma = 0
 
-if n >= 1 and n <= 100:
-    intervallo_pari = ([i for i in range(1, n)])
-    print(intervallo_pari)
+if n < 0 or n == 0:
+    print("Il numero non può essere negativo.")
+    exit(0)
+
+elif n >= 1 and n <= 100:
+    for i in range(1, n):
+        if i%2 == 0:
+             somma = somma + i
+
+elif n > 100:
+        for i in range(1, n):
+            if i%2 != 0:
+                 somma = somma + i
+
+print(f"la somma dei numeri pari equivale a: {somma}")
