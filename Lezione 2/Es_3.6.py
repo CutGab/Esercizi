@@ -28,8 +28,9 @@ print("I just found a bigger table!")
 
 Invited.insert(0,"Lucas")
 
-Invited.insert(2, "Mirco")
+Invited.insert(len(Invited)//2, "Mirco")
 
 Invited.append("Massimo")
 
-print(Invited)
+for name in Invited:
+    print(f"Congratulation {name}, you are invited to my dinner!")
