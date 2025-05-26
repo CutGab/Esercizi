@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <meta charset="UTF-8" />
+        <title>title</title>
+    </head>
+
+<body>
+
+    <div id="Risultato"> </div>
+    <div id="Saluto"></div>
+
+        <script>
+            let numero = prompt("Inserisci il primo numero");
+            //trasformo unmero da stringa a intero
+            numero = parseInt(numero)
+            let numero2= prompt("Inserisci il secondo numero");
+            numero2 = parseInt(numero2)
+
+            // document.getElementById("Risultato").innerHTML = numero;
+            // document.getElementById("Risultato").innerHTML = numero2;
+            document.getElementById("Risultato").innerHTML = "La Somma di " + numero + " + " + numero2 + " è " + (numero + numero2);
+
+            let nome = "Romina";
+            document.getElementById("Saluto").innerHTML = "Ciao " + nome
+
+
+            
+
+
+        </script>
+
+</body>
+
+</html>

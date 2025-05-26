@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Numero"> </div>
+
+    <script>
+        let numero = 100;
+    
+        document.getElementById("Numero").innerHTML = "Valore Iniziale: " + numero + "<br>" + "<br>";
+
+        // Modifica del valore della variabile    
+        numero = 70;
+    
+        document.getElementById("Numero").innerHTML += "Valore Finale: " + numero;
+    </script>
+</body>
+</html>
