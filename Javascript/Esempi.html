@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="somma"> </div>
+    <div id="output"> </div>
+
+    <script>
+        function sum(number1, number2) {
+            
+            document.getElementById("somma").innerHTML = "La somma dei due numeri è: " + (number1 + number2);
+        }
+        // alert("RAGHHHHHHHHHHHH")
+        sum(5, 10);
+
+        //Esempio di funzione che torna un valore
+
+        function saluto(nome) {
+            return "Welcome " + nome + "!";
+        }
+        let output = saluto("Gabriel");
+        document.getElementById("output").innerHTML = output;
+    </script>
+</body>
+</html>
