@@ -4,17 +4,17 @@ from dataclasses import dataclass
 
 class Impiegato():
 
-    _nome: str
-    _cognome: str
-    _data_nascita: date
-    _stipendio: RealGEZ
+    _nome: str #mutabile
+    _cognome: str #mutabile
+    _data_nascita: date #immutabile
+    _stipendio: RealGEZ #mutabile
 
     def __init__(self, nome: str, cognome: str, data_nascita: str, stipendio: RealGEZ) -> None:
 
-        self._nome = nome
-        self._cognome = cognome
+        self.set_nome(nome)
+        self.set_cognome(cognome)
         self._data_nascita = data_nascita
-        self._stipendio = stipendio
+        self.set_stipendio(stipendio)
 
 
     def __str__(self) -> str:
