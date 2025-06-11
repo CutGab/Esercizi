@@ -1,35 +1,19 @@
-# import matplotlib.pyplot as plt
+def bin_search(x, y):
+    mid = len(x)//2
 
-# def collatz(n: int):
+    if x[mid] == y:
+        return True
+    
+    if x[mid] > y:
 
-#     numeri: list = [n]
-        
-#     while n != 1:
-        
-#         if n % 2 == 0:
-            
-#             n = n/2
-            
-#             return n
-        
-#         else:
-            
-#             n = (3 * n) + 1
-            
-#             return n
-        
-#     numeri.append(n)
+        j = mid
 
-#     return numeri
+        bin_search(x[i:j], y)
 
-# numeri: list[float] = collatz(5)
-# plt.plot(numeri)
-# plt.show()
+    else:
 
-
-
-
-
+        i = mid + 1
+        bin_search[x[i:j], y]
 
 
 
