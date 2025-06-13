@@ -1,0 +1,29 @@
+Requisiti Sistema
+
+Requisiti Clienti:
+	-Nome
+	-Indirizzo email
+
+Requisiti Ristoranti:
+	-Nome
+	-Partita IVA (Stringa Numerica)
+	-Indirizzo residenza
+	-Città residenza
+	-Tipologia Cucine offerte (scelta da una lista tenuta sotto controllo dallo staff di RistoBook)
+
+Requisiti Prenotazioni:
+	-Giorno
+	-Ora
+	-Numero clienti commensali
+	-Stato Prenotazione {"Pendente", "Completata", "Non Utilizzata"}
+	-Promozione desiderata (o nessuna, se lo desidera)
+	
+Requisiti Promozioni:
+	-Percentuale sconto
+	-Ora inizio
+	-Ora fine
+	-Data inizio
+	-Data fine
+	-giorni in cui tale promozione è valida
+	-Posti coperti
+	-Disponibilità
